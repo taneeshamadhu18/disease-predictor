@@ -7,7 +7,7 @@ The backend is built with Python and Scikit-learn. It exposes an API that the fr
 ### How to Run the ML Part
 1.  Navigate to the `ml/` directory: `cd ml`
 2.  Install dependencies: `pip install -r requirements.txt`
-3.  To re-train the model, run the `Model_Training.ipynb` notebook.
+3. To re-train the model for asha worker, run the `asha_model_trainer.ipynb` notebook.
 4.  *(Add any instructions on how to start the API server here)*
 
 ---
