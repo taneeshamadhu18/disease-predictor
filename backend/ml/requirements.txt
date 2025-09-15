@@ -1,7 +1,10 @@
 pandas
 numpy
 scikit-learn
-Flask
-matplotlib
+wordcloud
 seaborn
+matplotlib
+lightgbm
 streamlit
+plotly
+
