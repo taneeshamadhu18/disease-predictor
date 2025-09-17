@@ -10,7 +10,7 @@ from datetime import datetime
 app = FastAPI(title="Water Quality Prediction API")
 
 # Load your trained pipeline
-pipeline = joblib.load("final_clean_pipeline.joblib")
+pipeline= joblib.load("final_clean_pipeline.joblib")
 
 try:
     # This will find the Secret File you just created in Render
