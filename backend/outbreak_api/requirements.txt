@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+pandas
+lightgbm
+pydantic
+google-cloud-firestore
+numpy
+twilio
