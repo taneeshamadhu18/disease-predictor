@@ -13,17 +13,14 @@ app = FastAPI(title="Water Quality Prediction API")
 pipeline = joblib.load("final_clean_pipeline.joblib")
 
 try:
-    if os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
-        cred = credentials.Certificate(os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"))
-    else: 
-        cred = credentials.Certificate("credentials_iot.json")
-    
+    # This will find the Secret File you just created in Render
+    cred = credentials.Certificate("credentials_iot.json")
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     print("Firestore database connected successfully!")
 except Exception as e:
     print(f"Error initializing Firestore: {e}")
-    db = None 
+    db = None
 
 @app.get("/")
 def root():
