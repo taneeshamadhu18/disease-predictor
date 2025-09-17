@@ -20,7 +20,7 @@ try:
     print("Firestore database connected successfully!")
 except Exception as e:
     print(f"Error initializing Firestore: {e}")
-    db = None
+    db = None
 
 @app.get("/")
 def root():
